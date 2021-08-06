@@ -1,0 +1,267 @@
+$fuenteTitulo: 'Playfair Display', serif;
+$fuenteTexto: 'Antic Didone', serif;
+$colorTexto:goldenrod;
+$colorFondo: #034054;
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.grilla {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 95% 150% 50%;
+    grid-template-areas: "header"
+    "section"
+    "footer"; }
+    
+    //Header ---------------
+    header{
+        grid-area: header;
+        background-color: $colorFondo; 
+        display: flex;
+        flex-direction: row;
+        
+        .titulo-container{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #lineaUno{
+                margin-top: 50px;
+            }
+            .linea{
+                height: 3px;
+                width: 300px;
+                background-color: white;
+            }
+            
+            .circulo{
+                height: 300px;
+                width: 300px;
+                border-radius: 200px;
+                background-color: #95572498;
+                display: flex;
+                flex-direction: column;
+            }
+            .titulo{
+                margin:0%;
+                margin-top: 20px;
+                padding-top: 0px;
+                padding-left: 30px;
+                font-family: $fuenteTexto;
+                font-weight: lighter;
+                color: $colorTexto;
+                font-size: 70px;
+            }
+            
+            .slogan{
+                padding-left: 7px;
+                font-family: $fuenteTexto;
+                font-weight: lighter;
+                color: $colorTexto;
+                font-size: 25px;
+                
+            }
+        }
+        
+        
+        .imgContainer{
+            height: 100%;
+            width: 30%;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgba(255, 255, 255, 0.692);
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    //Section -------------------
+    
+    section{
+        grid-area: section;
+        background-image: url(../img/fotoUno.jpg);
+        background-blend-mode: overlay;
+        background-color: rgba(255, 255, 255, 0.452);
+        background-repeat: no-repeat;
+        background-position:center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+
+        
+        nav{
+            margin-top: 20px;
+            background-color: $colorFondo;
+            height: 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            form{
+                input{
+                    border-radius: 10px;
+                    height: 20px;
+                    width: 200px;
+                    font-family: $fuenteTexto;
+                }
+
+                .submit-buscador{
+                    border-radius: 10px;
+                    background-color: $colorTexto;
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                }
+            }
+            
+            h3{
+                color: $colorTexto;
+                font-family: $fuenteTitulo;
+                font-size: 30px;
+                font-weight: lighter;
+                cursor: pointer;
+            }
+            
+            h3:hover{
+                color: rgba(218, 165, 32, 0.63);
+            }
+            
+            .contenedor-carrito{
+                ul{
+                    list-style-type: none;
+                }
+                
+                .submenu {
+                    position: relative;
+                    
+                    #carrito{
+                        display: none;
+                    }
+                }
+                
+                .submenu:hover #carrito{
+                    display: block;
+                    position: absolute;
+                    justify-content: center;
+                    right: 0;
+                    top: 110%;
+                    background-color: rgba(255, 255, 255, 0.863);
+                    padding: 20px;
+                    min-width: 300px;
+                }
+                
+            }
+            tr th{
+                padding: 5px;
+                color: $colorFondo;
+                font-family: $fuenteTexto;
+            }
+            
+            #vaciar-carrito{
+                border-radius: 10px;
+                padding: 5px;
+                background-color: $colorFondo ;
+                text-decoration: none;
+                color: white;
+                font-family: $fuenteTexto;
+            }
+            .carrito-btn{
+                
+                color: $colorTexto;
+                font-size: 25px;
+                
+            }
+            
+                
+            }
+
+            .productos-container{
+                margin: 250px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+
+                .producto{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgba(255, 255, 255, 0.658);
+                    height: 240px;
+                    width: 200px;
+                    margin: 10px;
+                    align-items: center;
+                    padding: 10px;
+                    box-shadow: rgba(128, 128, 128, 0.644) 10px;
+                    border-radius: 10px;
+                    text-align: center;
+                    img{
+                        width: 180px;
+                        height: 120px;
+                    }
+
+                    .nombre, .precio{
+                        font-family: $fuenteTexto;
+                        font-weight: bold;
+                        color: $colorTexto;
+                        margin: 7px;
+                        margin-left: 3px;
+                        margin-right: 3px;
+                    
+                    }
+
+                    
+
+                    a{
+                        font-family: $fuenteTexto;
+                        text-decoration: none;
+                        padding: 7px;
+                        background-color: $colorFondo;
+                        border-radius: 10px;
+                        color: white;
+                    }
+
+                    a:hover{
+                        background-color: #035975;
+                    }
+                }
+
+            }
+        }
+
+       
+    footer{
+        grid-area: footer;
+        background-color: $colorFondo;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            font-family: $fuenteTitulo;
+            color: $colorTexto;
+            font-size: 50px;
+            font-weight: lighter;
+            margin: 10px;
+        }
+
+        li{
+            list-style-type: none;
+            color: $colorTexto;
+            font-family: $fuenteTexto;
+            font-size: 20px;
+        }
+    }

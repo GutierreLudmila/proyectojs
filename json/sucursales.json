@@ -1,0 +1,17 @@
+[
+    {
+        "zona": "Zona Norte" ,
+        "direccion": "Av. Presidente Peron 1000, San Miguel", 
+        "telefono": "1122334455" 
+    },
+    {
+        "zona": "Zona Oeste" ,
+        "direccion":"Mansilla 800, Ituzaingo" , 
+        "telefono": "1155443322" 
+    },
+    {
+        "zona": "CABA" ,
+        "direccion": "Av. Acoyte 3000, Caballito", 
+        "telefono": "1121222324" 
+    }
+]

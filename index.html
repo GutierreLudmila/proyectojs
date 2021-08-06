@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/43566ee3ed.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grilla">
+        <header>
+            <div class="titulo-container">
+                <div class="circulo">
+                    <div class="linea" id="lineaUno">
+                    </div>
+                    <h1 class="titulo">
+                        WANDA
+                    </h1>
+                    <h3 class="slogan">
+                        Despertando la conciencia
+                    </h3>
+                    <div class="linea">
+                    </div>
+                </div>
+            </div>
+            <div class="imgContainer">
+                <img src="./img/fotoDos.jpg" alt="">
+            </div>
+        </header>
+        <section class="section">
+            <nav>
+                <form action="" id="formulario"> 
+                    <input type="text" class="barra-busqueda" id="buscador" placeholder="Que desea buscar?" >
+                    <input type="submit" class="submit-buscador" value="Buscar">
+                </form>
+                <h3>
+                    Productos
+                </h3>
+                <div class="contenedor-carrito">
+                    <ul>
+                        <li class="submenu">
+                            <span class="carrito-btn"><i class="fas fa-store"></i></span>
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                                
+                                <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </nav>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="./img/alfajor-mani.jpg" alt="">
+                    <p class="nombre">Alfajor de Mani</p>
+                    <p class="precio">$60</p>
+                    <a href="#" class="agregar-carrito" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="producto">
+                    <img src="./img/budin_marmolado2.png" alt="">
+                    <p class="nombre">Budin Marmolado</p>
+                    <p class="precio">$320</p>
+                    <a href="#" class="agregar-carrito" data-id="2">Agregar al carrito</a>
+                </div>
+                <div class="producto">
+                    <img src="./img/Coco-Dos.png" alt="">
+                    <p class="nombre">Alfajor de Coco</p>
+                    <p class="precio">$70</p>
+                    <a href="#" class="agregar-carrito" data-id="3">Agregar al carrito</a>
+                </div>
+                <div class="producto">
+                    <img src="./img/Limon-Uno.png" alt="">
+                    <p class="nombre">Budin de Limon</p>
+                    <p class="precio">$315</p>
+                    <a href="#" class="agregar-carrito" data-id="4">Agregar al carrito</a>
+                </div>
+                <div class="producto">
+                    <img src="./img/alfajoresmaicena.jpg" alt="">
+                    <p class="nombre">Alfajor de Maicena</p>
+                    <p class="precio">$65</p>
+                    <a href="#" class="agregar-carrito" data-id="5">Agregar al carrito</a>
+                </div>
+                <div class="producto">
+                    <img src="./img/budin-de-naranja-y-chocolate.jpg" alt="">
+                    <p class="nombre">Budin de Naranja y Chocolate</p>
+                    <p class="precio">$370</p>
+                    <a href="#" class="agregar-carrito" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>  
+        </section>
+        
+        <footer>
+            <h3>
+                Contactos
+            </h3>
+        </footer>
+    </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="./js/articulos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

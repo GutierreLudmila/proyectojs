@@ -1,0 +1,189 @@
+body {
+  margin: 0%;
+  padding: 0%; }
+
+.grilla {
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 95% 150% 50%;
+  grid-template-areas: "header"
+ "section"
+ "footer"; }
+
+header {
+  grid-area: header;
+  background-color: #034054;
+  display: flex;
+  flex-direction: row; }
+  header .titulo-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .titulo-container #lineaUno {
+      margin-top: 50px; }
+    header .titulo-container .linea {
+      height: 3px;
+      width: 300px;
+      background-color: white; }
+    header .titulo-container .circulo {
+      height: 300px;
+      width: 300px;
+      border-radius: 200px;
+      background-color: #95572498;
+      display: flex;
+      flex-direction: column; }
+    header .titulo-container .titulo {
+      margin: 0%;
+      margin-top: 20px;
+      padding-top: 0px;
+      padding-left: 30px;
+      font-family: "Antic Didone", serif;
+      font-weight: lighter;
+      color: goldenrod;
+      font-size: 70px; }
+    header .titulo-container .slogan {
+      padding-left: 7px;
+      font-family: "Antic Didone", serif;
+      font-weight: lighter;
+      color: goldenrod;
+      font-size: 25px; }
+  header .imgContainer {
+    height: 100%;
+    width: 30%;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.692);
+    justify-content: center; }
+    header .imgContainer img {
+      width: 100%;
+      height: 100%; }
+
+section {
+  grid-area: section;
+  background-image: url(../img/fotoUno.jpg);
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.452);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center; }
+  section nav {
+    margin-top: 20px;
+    background-color: #034054;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    section nav form input {
+      border-radius: 10px;
+      height: 20px;
+      width: 200px;
+      font-family: "Antic Didone", serif; }
+    section nav form .submit-buscador {
+      border-radius: 10px;
+      background-color: goldenrod;
+      width: 80px;
+      height: 25px;
+      color: white; }
+    section nav h3 {
+      color: goldenrod;
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      font-weight: lighter;
+      cursor: pointer; }
+    section nav h3:hover {
+      color: rgba(218, 165, 32, 0.63); }
+    section nav .contenedor-carrito ul {
+      list-style-type: none; }
+    section nav .contenedor-carrito .submenu {
+      position: relative; }
+      section nav .contenedor-carrito .submenu #carrito {
+        display: none; }
+    section nav .contenedor-carrito .submenu:hover #carrito {
+      display: block;
+      position: absolute;
+      justify-content: center;
+      right: 0;
+      top: 110%;
+      background-color: rgba(255, 255, 255, 0.863);
+      padding: 20px;
+      min-width: 300px; }
+    section nav tr th {
+      padding: 5px;
+      color: #034054;
+      font-family: "Antic Didone", serif; }
+    section nav #vaciar-carrito {
+      border-radius: 10px;
+      padding: 5px;
+      background-color: #034054;
+      text-decoration: none;
+      color: white;
+      font-family: "Antic Didone", serif; }
+    section nav .carrito-btn {
+      color: goldenrod;
+      font-size: 25px; }
+  section .productos-container {
+    margin: 250px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    section .productos-container .producto {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.658);
+      height: 240px;
+      width: 200px;
+      margin: 10px;
+      align-items: center;
+      padding: 10px;
+      box-shadow: rgba(128, 128, 128, 0.644) 10px;
+      border-radius: 10px;
+      text-align: center; }
+      section .productos-container .producto img {
+        width: 180px;
+        height: 120px; }
+      section .productos-container .producto .nombre, section .productos-container .producto .precio {
+        font-family: "Antic Didone", serif;
+        font-weight: bold;
+        color: goldenrod;
+        margin: 7px;
+        margin-left: 3px;
+        margin-right: 3px; }
+      section .productos-container .producto a {
+        font-family: "Antic Didone", serif;
+        text-decoration: none;
+        padding: 7px;
+        background-color: #034054;
+        border-radius: 10px;
+        color: white; }
+      section .productos-container .producto a:hover {
+        background-color: #035975; }
+
+footer {
+  grid-area: footer;
+  background-color: #034054;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  footer h3 {
+    font-family: "Playfair Display", serif;
+    color: goldenrod;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 10px; }
+  footer li {
+    list-style-type: none;
+    color: goldenrod;
+    font-family: "Antic Didone", serif;
+    font-size: 20px; }
